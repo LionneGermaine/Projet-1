@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+     <meta name="author" content="Duplex Arsene Dissi Djine, Germaine Ngouffo Nimpa, Mamadou Mouctar "/> 
+    <link rel="stylesheet" type="text/css" href="messagerie.css" />
+    <script type="text/javascript" src="messagerie.js"></script>
+    <title>Interface web pour le courriel</title> 
+</head>
+
+<body onload="onButtonInboxClick()">
+
+    <nav>
+        <div class="container">
+            <h1>Centre de courriel</h1>
+        </div>
+    </nav>
+
+    <div class="search">
+        <div class="container">
+            <input type="text" placeholder="recherche">
+            <button class="btn solid">Recherche</button>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <img src="image.jpg" alt="">
+        </div>
+    </div>
+
+
+    <table class="main-frame">
+
+        <tr class="top-row">
+
+            <td id="top-left-region">
+                <button class="btn solid" type="button" onclick="onButtonComposeClick()">Nouveau message</button>
+            </td>
+
+        </tr>
+        <tr>
+            <td id="bottom-left-region">
+                <table>
+                    <tr>
+                        <td>
+                            <button class="btn solid" type="button" onclick="onButtonInboxClick()">Visualisation</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn solid" type="button" onclick="onButtonOutboxClick()">Visualisation_I</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn solid" type="button" onclick="onButtonYpClick()">Modifier_C</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+        <td id="bottom-right-region"></td>
+    </table>
+</body>
+
+</html>
